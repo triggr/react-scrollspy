@@ -26,8 +26,11 @@ test('renders children with correct props', (t) => {
 test('renders expected html tag', (t) => {
   const defaultTag = shallow(<Scrollspy></Scrollspy>)
   const customTag = shallow(<Scrollspy componentTag={ 'div' }></Scrollspy>)
+  const CustomRootComponent = (props) => <ul {...props} />;
+  const customElement = shallow(<Scrollspy componentTag={ CustomRootComponent }></Scrollspy>)
 
   t.is(defaultTag.type(), 'ul')
   t.is(customTag.type(), 'div')
+  t.is(customElement.type(), CustomRootComponent)
+  t.is(customElement.dive().type(), 'ul')
 })
-

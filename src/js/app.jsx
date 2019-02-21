@@ -127,7 +127,7 @@ class App extends React.Component {
                       </tr>
                       <tr>
                         <td className="c-table__data">componentTag</td>
-                        <td className="c-table__data">HTML tag for Scrollspy component if you want to use other than <code>{'<ul/>'}</code> [optional].</td>
+                        <td className="c-table__data">HTML tag or React component for Scrollspy component if you want to use other than <code>{'<ul/>'}</code> [optional].</td>
                       </tr>
                       <tr>
                         <td className="c-table__data">style</td>

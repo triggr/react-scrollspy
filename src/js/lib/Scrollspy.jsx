@@ -21,7 +21,7 @@ export default class Scrollspy extends React.Component {
       currentClassName: PropTypes.string.isRequired,
       scrolledPastClassName: PropTypes.string,
       style: PropTypes.object,
-      componentTag: PropTypes.string,
+      componentTag: PropTypes.elementType,
       offset: PropTypes.number,
       rootEl: PropTypes.string,
       onUpdate: PropTypes.func,
